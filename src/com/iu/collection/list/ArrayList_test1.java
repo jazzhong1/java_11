@@ -19,5 +19,27 @@ public class ArrayList_test1 {
 		for (int i = 0; i < ar.size(); i++) {
 			System.out.println(ar.get(i));
 		}
+		
+		ar.set(1, 3.2);
+		System.out.println();
+		
+		for (int i = 0; i < ar.size(); i++) {
+			System.out.println(ar.get(i));
+		}
+		
+		ar.add(1, 100);	//삽입이기때문에 해당인덱스에 삽입하고 뒤에 인덱스는 하나씩 밀린다.
+		System.out.println();
+		for (int i = 0; i < ar.size(); i++) {
+			System.out.println(ar.get(i));
+		}
+		
+		ar.remove(1);	//삭제하고 해당인덱스를 앞으로 당긴다.
+		System.out.println();
+		for (int i = 0; i < ar.size(); i++) {
+			System.out.println(ar.get(i));
+		}
+		
+		
 	}
+	
 }
