@@ -12,11 +12,12 @@ public class StudentController {
 	
 	public StudentController() {
 			sc=new Scanner(System.in);
-			actions=new ArrayList();
+			actions=new ArrayList<Action>();
 			actions.add(new StudentInput());
 			actions.add(new StudentScoreInput());
 			actions.add(new StudentCheck());
 			actions.add(new StudentServiceView());
+			actions.add(new StudentDelete());
 	}
 	
 	public void start(){
@@ -25,11 +26,11 @@ public class StudentController {
 		boolean check=true;
 		
 		while(check){
-			System.out.println("1.학생등록|2.성적입력|3.학생조회|4.전체조회|5.프로그램종료");
+			System.out.println("1.학생등록|2.성적입력|3.학생조회|4.전체조회|5.학생삭제|6.프로그램종료");
 			System.out.print("입력:");
 			int num=sc.nextInt();
 			
-			if(num>0&&num<5){
+			if(num>0&&num<6){
 				actions.get(num-1).excute();
 				actions.get(num-1).excute(StudentDataBase.students);
 			}
