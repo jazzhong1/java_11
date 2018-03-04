@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class StudentDataBase {
 	
-	
-	public static ArrayList<Student> studentsArray;
+	public static ArrayList<Student> students;
 	
 }

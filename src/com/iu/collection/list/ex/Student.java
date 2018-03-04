@@ -46,7 +46,6 @@ public class Student {
 	}
 	public void setTotal(int total) {
 		this.total=total;
-		
 	}
 	public double getAvg() {
 		return avg;
