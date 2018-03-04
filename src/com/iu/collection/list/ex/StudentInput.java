@@ -8,7 +8,7 @@ public class StudentInput implements Action {
 	private StudentServiceView serviceView;
 
 	public StudentInput() {
-		StudentDataBase.students = new ArrayList();
+		StudentDataBase.students = new ArrayList<Student>();
 		serviceView=new StudentServiceView();
 		sc = new Scanner(System.in);
 	}
